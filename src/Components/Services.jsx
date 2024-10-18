@@ -16,6 +16,10 @@ const Services = () => {
         gsap.to(card, { duration: 1, rotateY: 360 });
       });
 
+      card.addEventListener('mouseleave', () => {
+        gsap.to(card, { duration: 1, rotateY: 0 });
+      });
+
     });
   }, []);
 
